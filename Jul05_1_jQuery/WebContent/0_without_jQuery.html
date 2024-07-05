@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let iInput =null;
+	function init(){
+		iInput = document.getElementById("i");
+		alert(iInput);
+	}
+	//버튼 한 번 눌렀을 때 alert창에 input에 입력한 값이 출력
+	function print(){
+		alert(iInput.value	);
+	}
+	
+	// 유효성 검사 vs XXX.ValidChecker.js
+	//	=> 유효성검사를 편하게 하기 위해 함수를 정리해놓음
+	// 웹페이지 이벤트 처리 vs jQuery.js
+	//	=> JS자체를 편하게 사용할 수 있도록 함수를 정리해놓음
+	
+	
+</script>
+</head>
+<body onload="init();">
+	<input id="i">
+	<button onclick="print();">Print</button>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		// ㅋㅋ : 글자색 : green / 배경색 : red
+		// ㅎㅎ : 글자색 : yellow / 배경색 : blue
+		// ㅠ : 글자색 : pink / 배경색 : teal
+		
+		let colArr = ["green", "yellow", "pink"];
+		let bgColArr = ["red", "blue", "teal"];
+		
+		/* let arrobj[
+			{
+				color:"green",
+				bgc:"red"
+			},
+			{
+				color:"yellow",
+				bgc:"blue"
+			},
+			{
+				color:"pink",
+				bgc:"teal"
+			},
+			
+		]; */
+		 $("td").each((i,t)=>{
+			$(t).css("color",colArr[i]).css("background-color",bgColArr[i]);
+		}); 
+		/* $("td").each((i,t)=>{
+			$(t).css("color",arrobj[i].color).css("background-color",arrobj[i].bgc);
+		}); */
+		// setInterval()을 이용해서
+		// 처음시작 사진~ 끝사진까지 한장씩 넘어가면서 보여주기
+		// 마지막 사진을 출력하면 => 다시 처음부터 보여주기
+		
+		let imgArr=["run1.png","run2.png","run3.png","run4.png"];
+		let i =0;
+		setInterval(() => {
+			i++;
+			if (i==5) {
+				i=1;
+				
+			}
+			 $("img").attr("src","run"+i+".png");
+		}, 3000);
+		
+});
+
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>ㅋㅋㅋㅋㅋㅋ</td>
+		</tr>
+		<tr>
+			<td>ㅎㅎㅎㅎ</td>
+		</tr>
+		<tr>
+			<td>ㅠㅠㅠㅠ</td>
+		</tr>
+
+	</table>
+	<img>
+</body>
+</html>
