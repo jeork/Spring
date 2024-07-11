@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript" src="resources/jQuery.js"></script>
+<script type="text/javascript" src="resources/js/jQuery.js"></script>
 <script type="text/javascript">
 	$(function() {
 	});
@@ -34,10 +34,10 @@
 	</table>
 	<table id="siteNavArea">
 		<tr align="center">
-			<td><a href=""><span>운동 정보</span></a></td>
-			<td><a href=""><span>운동 루틴</span></a></td>
-			<td><a href=""><span>나의 운동 루틴</span></a></td>
-			<td><a href=""><span>운동 칼로리 계산</span></a></td>
+			<td><a href="workout.go"><span>운동 정보</span></a></td>
+			<td><a href="routine.go"><span>운동 루틴</span></a></td>
+			<td><a href="myroutine.go"><span>나의 운동 루틴</span></a></td>
+			<td><a href="calc.go"><span>운동 칼로리 계산</span></a></td>
 		</tr>
 	</table>
 	<table id="siteContentArea">
@@ -47,6 +47,15 @@
 			</td>
 		</tr>
 	</table>
+	<div id="boardBox">
+		<a href="write.go">
+			<img src="resources/img/write.jpg">
+		</a>
+		<br>
+		<a href="board.go">
+			<img src="resources/img/board.jpg">
+		</a>
+	</div>
 
 </body>
 </html>

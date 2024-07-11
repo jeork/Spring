@@ -19,6 +19,7 @@ public class HomeController {
 	public String home2(HttpServletRequest req) {
 		return home(req);
 	}
+	
 
 
 }

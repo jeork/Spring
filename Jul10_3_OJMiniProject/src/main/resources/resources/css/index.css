@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'speed';
+	src: url(aSpeed.ttf)
+}
+
+body {
+	font-family: 'speed';
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#siteTitleArea {
+	width: 100%;
+}
+
+#siteNavArea {
+	width: 100%;
+}
+
+#siteNavArea a {
+	text-decoration: none;
+	box-shadow: inset 0 -10px 0 hsla(53, 90%, 83%, 0.93);
+	padding-bottom: 2px;
+}
+
+#siteNavArea span {
+	display: inline-block;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+span:after {
+	display: block;
+	content: '';
+	border-bottom: solid 3px #ea2129;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+
+span:hover:after {
+	transform: scaleX(1);
+}
+
+#boardBox{
+	position: fixed;
+	top:200px;
+	left: 20px;
+	border: solid pink 2px;
+}
+
+#siteContentArea {
+	position: relative; border : solid black 2px;
+	margin-top: 2%;
+	margin-left: 15%;
+	width: 70vw;
+	height: 80vh;
+	border: solid black 2px;
+}
+
+#titleTd {
+	width: 70%;
+	font-size: 24px;
+}
+
+#titleTd:hover {
+	transition-duration: 0.5s;
+	text-shadow: 3px 4px 5px red;
+}
+
+#loginTbl input {
+	padding: 15px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#loginTbl input:hover {
+	background-color: #96C9F4;
+}
+
+#loginBtn {
+	width: 100%;
+	font-family: 'speed';
+	padding: 15px;
+	background-color: #3FA2F6;
+	border: none;
+	border-radius: 5px;
+}
+
+#loginBtn:hover {
+	background-color: #0F67B1;
+}
+
+#signupTbl input {
+	font-family: 'speed';
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#signupBtn {
+	font-family: 'speed';
+	padding: 10px;
+	width: 100%;
+}
+
+#routineTbl {
+	position: absolute;
+	top:50px;
+	left:50px;
+}
+
+#routineTbl input {
+	width: 100px;
+	
+}
+
+#calcTbl th{
+	font-size:35px;
+	padding-bottom: 70px;
+}
+#calcTbl input{
+	width:100px;
+	height: 30px;
+}
+#calcTbl button{
+	width:200px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;	
+	
+}
+#calcTbl select{
+	width:200px;
+	height: 30px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#boardTbl th{
+	border-bottom: solid pink 2px;
+	padding-bottom: 50px;
+}
+#boardTbl td{
+	border-bottom: solid pink 2px;
+}

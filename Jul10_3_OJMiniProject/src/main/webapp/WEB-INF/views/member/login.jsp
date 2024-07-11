@@ -13,10 +13,10 @@
 				<th>로 그 인</th>
 			</tr>	
 			<tr>
-				<td><input id="m_id" autocomplete="off" placeholder="아이디"></td>
+				<td><input name="m_id" autocomplete="off" placeholder="아이디"></td>
 			</tr>
 			<tr>
-				<td><input id="m_pw" type="password" placeholder="비밀번호"></td>
+				<td><input name="m_pw" type="password" placeholder="비밀번호"></td>
 			</tr>
 			<tr>
 				<td>
